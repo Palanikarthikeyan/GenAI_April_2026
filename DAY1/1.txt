@@ -1,0 +1,340 @@
+ Good Morning All
+
+ Welcome to Gen AI and LLM Training 
+            ===============
+ This is Palani Karthikeyan (Call: Karthik) - Trainer.
+        =====================================
+
+-----------------------------------------------------------------------------------------------
+
+Gen AI and LLM
+|
+About AI
+|
+GenAI
+ |->LLM
+ |->LIM
+Agentic AI
+|
+Gen AI
+--------
+NLP 
+LangChain - framework
+|
+LLM
+|
+RAG
+ |->data loader (pdf;Excel;JSON;web;folder/directory ...etc.,)
+    -----------
+  
+ [Data]-->[Chunk]-->[Embedding]-->[VectorDB(oracle23AI;FAISS;Chroma;;) -->RAG-->LLM-->Answer->End_User
+						
+PromptEngineering						
+ |
+Chat History - memory
+ |
+Pipeline 
+----------------
+ |
+Streamlit - UI - FrontEnd 
+ |
+deploy and run 
+---------------------
+ |
+ |->Gen AI Vs Agent AI   
+		|
+		|->LangChain ; LangGraph
+--------------------------------------------------------------------------------------------------------------
+ML
+ |->Data -> features 
+              |---> prediction 
+	      |---> classification 
+	------------------//manual feature engineering
+
+ |->CPU
+
+DL -NN
+    |->ANN - dataset
+    |->CNN - images 
+    |->RNN - used for sequence data
+     
+    |->Transformer 
+    |--> GPU
+ -------------------// Learns features automatically 
+
+
+
+Input1 = 10
+Input2 = 20
+Add -> 10+20 => 30
+		---//Sum value 
+----------------------------------------// load ->split data ->train ->test ----> OK --->deployment - MLOPs
+									  |->input_data
+input1= 100
+input2= 200
+add  ------------> 300
+==========================================================================================================
+SELECT AI  --------> Get list of sales records from dept list // This is plain text - English 
+Oracle23 ai	     |______________________________________|
+				|
+				select * from dept where edept = 'sales' // SQL - Database
+
+RAG-Application
+ |
+my own-chatbot
+   -----------
+	business data	
+==========================================================================================================
+
+https://github.com/Palanikarthikeyan/GenAI_April_2026/tree/main
+|
+NLP
+----
+  - field with in AI
+  - focuses on enabling computer(System) to understand, interpret and generate human language(text/speech)
+  |
+  - LLMs are advance NLP systems
+    ------
+     |->How models process words
+     |->How they understand context
+	------------------------------//NLP technique 
+
+  - Key components of LLM
+    - NLP
+	|->tokenization
+	|->embeddings
+	|->attention
+	|->language models
+	|->Write the clear prompts
+	|->Control model output (NLP-aware prompt)
+	|->Named Entity Recognition (NER)
+	|->Text classification
+	|->Sematic similarity
+ 
+
+1.Corpus
+2.documents
+3.words
+------
+|
+numbers ->[1,2,3,4] //process data
+
+
+data="ML is a subset of AI"
+     ------------------------
+
+split the data - tokenization
+
+ML is a subset of AI => ["ML","is","a","subset","of","AI"] =>each word/token convert to number(vectors)
+
+----------------
+eating
+------ //to reduce the root word ==> eat
+	 -------------------------------------//stemming - stem
+
+Vs
+
+eating
+------ //to reduce the root word ==> eat
+	 -------------------------------------//lemmatization - lemma
+
+
+stem - remove the chars(suffix)  
+================================
+running -> run  # OK
+
+studies -> studi # not-meaning
+
+history -> histori # not-meaning
+
+eating --> eat # OK
+
+leamma 
+--------
+running --> run
+studies --> study
+history --> history
+-----------------------//convert into dict based 
+|
+POS
+=======================================================================
+
+finally
+---------
+ |-->tokeization(words/token)
+	|
+	likes to read ai // 
+
+How to Convert to vector?
+------------------=======-
+1. one-hot encoding
+2. bag-of-words
+3. TF-IDF
+4. word2vector -- important for llm
+|
+5. transformer
+|
+..
+
+
+1. one-hot encoding
+---------------------
+likes to read ai //data
+
+	likes	to   read   ai
+
+likes    1      0     0      0
+to       0      1     0      0
+read     0      0     1      0
+ai       0      0     0      1
+
+
+[1,0,0,0
+ 0,1,0,0
+ 0,0,1,0
+ 0,0,0,1]
+-----------//vector - numerical array
+
+|
+Stopwords - applying stop words
+========= 
+ |-> reduce vector size
+ |-> don't carry significant meaning
+ |-> reduce noise  
+
+# removed stop words - to,a,...
+# ---------------------------------
+likes  read   ai = 3 words
+-------------------------------------------------------------------------------------------------------
+|
+Python 
+ |->Dynamic programming language 
+    -------
+	var = 10
+	..
+	var = "Hello" # OK
+	
+ |-> In python - everything is class object design model
+			      -----------------
+   every value(10,10.2,'data',True...)//object
+
+  |-> list - collection of items - index based access - mutable - [] 
+  |-> tuple - collection of items - index based access - immutable - ()
+
+  |-> dict - collection of items - key:value based - mutable - {}
+
+ 
+ |->nlp tokenization - codes are avaiable in python //module 
+ |->ML algorithms - codes are avaiable in python //module 
+
+ |->Gen AI LLM - codes are avaiable in python //module 
+
+ |->DataEngineering - codes are avaiable in python //module 
+
+   import <module>  <--- (1)
+   <module>.var 
+   ---------------------
+   from <module> import var  <-- (2)
+    var
+
+
+ Dir1/
+   |-->Dir2/
+	|--->Dir3/
+		|-->time.py
+			|-->ctime()<--
+
+ from Dir1.Dir2.Dir3.time import ctime
+ ctime()  --   --   --
+
+ -----------------------------------------------------------------
+
+ file: myfile.py			file: p1.py
+ ------------------			=============
+ def getdata():				import myfile  <== module
+	....				myfile.getdata() //functionCall
+	....
+
+ class myclass:				myobj = myclass() <-- object creation 
+	...				myobj.method1() <-- methodCall
+	def method1():
+---------------------------------------------------------------------------
+
++------+
+|
+|
++------+
+  |
+syslog.log
+ - debug
+ - warn
+ - critic
+  ..
+
+#######################################################################################
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
