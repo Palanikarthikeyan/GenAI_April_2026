@@ -21,3 +21,4 @@ duckduckgo-search
 langchain-classic
 langchain_groq
 wikipedia
+sqlite3
